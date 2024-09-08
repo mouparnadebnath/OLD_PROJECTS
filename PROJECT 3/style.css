@@ -1,0 +1,224 @@
+/* Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:60px
+}
+#navbar{
+    display: flex;
+align-items: center;
+position:sticky;
+top: 0px;
+
+}
+ul{
+    display:flex;
+font-family: cursive;
+margin:0px 300px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding:30px 40px;
+  border-radius: 40px;
+text-decoration: none;
+transition: all .5s ease-in-out .2s;
+
+}
+
+/* #navbar ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* background: #ffee10; */
+    /* transition: .5s;
+    transform: scale(.9); */
+    /* z-index: -1; */
+
+#navbar ul li a:hover::before{
+    transform: scale(3);
+    box-shadow: 0 0 15px #f15792;
+
+}
+#navbar ul li a:hover {
+    color: rgb(238, 199, 217);
+    box-shadow: 0 0 15px #f15792;
+    text-shadow: 0 0 15px #f15792; 
+                 
+}
+/* home */
+
+#home {
+    display: flex;
+
+    flex-direction: column;
+    padding: 3px 200px;
+    height:690px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before
+{
+    content: "";
+    background: url('background.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#home .heading{
+    font-size: 3rem;
+    color: #0c0202;
+    font-family: monospace;
+}
+#home .homepara{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-style: italic;
+    height: 200px;
+}
+.btn{
+    font-size: 1.7rem;
+    font-family: cursive;
+    background: #fcdfdf;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+   border: 4px solid rgb(56, 7, 7);
+   transition: all 1s ease-in-out .1s;
+}
+.btn:hover{
+    text-shadow: pink;
+    background-color: #ff7cb3;
+    color:rgb(248, 248, 248) ;
+    border:4px solid #1d0202;
+}
+
+/* services */
+
+#flower .heading{
+    font-size: 3rem;
+    color: #0c0202;
+    font-family: monospace;
+    text-align: center;
+    margin:50px 0;
+    margin:50px 0;
+}
+#flower .servicepara{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-style: italic;
+}
+#boxes{
+    display: grid;
+grid-template-columns: 2fr 2fr 2fr;
+grid-gap: 100px 200px ;
+padding:60px 10px;
+/* height: 500px; */
+/* border: 2px solid black; */
+}
+
+.box{
+    border: 4px solid rgb(255, 251, 251);
+    padding: 0px 20px;
+text-align: center;
+background-color: #fac5e2;
+border-radius: 40px;
+}
+.box img{
+display: block;
+padding: 0px 25px;
+
+}
+
+#services .img{
+    height: 500px;
+    margin: auto;
+    display: block;
+    width: 100px;
+}
+
+#services::before{
+  
+        content: "";
+        background: url('rose\ petals.png') no-repeat center center/cover;
+        position: absolute;
+        top: 750px;
+        left: 0px;
+        height: 1500px;
+        width: 100%;
+        z-index: -1;
+        opacity: .6;
+  
+}
+
+/* about us */
+
+#about .heading{
+    font-size: 3rem;
+    color: #0c0202;
+    font-family: monospace;
+    text-align: center;
+    margin:50px 0;
+    margin:50px 0;
+}
+.aboutpara{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* contact */
+#contact .logo{
+    display: inline-block;
+    margin: 30px 30px;
+
+ 
+}
+#contact{
+    padding: 0px 400px;
+}
+
+.copyright{
+    background-color: #000000;
+    color: white;
+   font-size: 2rem;
+   text-align: center;
+}

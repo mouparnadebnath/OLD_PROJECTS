@@ -1,0 +1,58 @@
+/* phone */
+@media only screen (max-width:599px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+
+    }
+
+
+    #home {
+        height: 350px;
+        padding: 3px 28px;
+
+    }
+
+    #home .heading {
+        font-size: 15px;
+    }
+
+    #home::before {
+        height: 400px;
+
+    }
+    #services {
+        flex-direction: column;
+        }
+        #services .box{
+        padding: 15px;
+        margin: 2px 0px;
+        margin-bottom:20px ;
+        }
+#boxes{
+    grid-template-columns: 2fr 2fr ;
+grid-gap: 50px 50px ;
+padding:20px 5px;
+
+}
+        #about .heading{
+            font-size: 15px;
+        }
+        #about .aboutpara{
+            font-size: 8px;
+        }
+
+        
+
+}
+    /*tablets */
+    @media only screen (min-width:599px) {}
+
+
+    /* desktop */
+    @media only screen (min-width:1200px) {}

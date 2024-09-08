@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text Effect</title>
+    <style>
+        body {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; */
+
+            background-color: #000000;
+        }
+
+        nav {
+            border: 2px solid yellow;
+            display: flex;
+            height: 80px;
+            border-radius: 50px;
+        }
+
+        .glow-text li a {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            transition: text-shadow 0.3s ease-in-out;
+            font-family: 'Franklin Gothic Medium';
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+
+            padding: 10px;
+            margin: 15px;
+        }
+
+        ul {
+            display: flex;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            /* border: 2px solid yellow; */
+        }
+
+        .glow-text a:hover {
+            text-shadow: 0 0 10px rgba(160, 241, 9, 0.7), 0 0 20px rgba(250, 225, 2, 0.932), 0 0 30px rgba(30, 253, 10, 0.932);
+        }
+        .left{
+            border: 2px solid red;
+            height: 50px;
+            width: 50px;
+            margin: 100px;
+            padding: 40px;
+            margin-right: 0px;
+            margin-left: 110px;
+            border-radius: 100%;
+            z-index: 1;
+        }
+        .right{
+            border: 2px solid red;
+          height: 50px;
+            width: 50px;
+            margin: 100px 0px;
+            padding: 40px;
+            border-radius: 100%;
+            z-index: -1;
+        }
+        .love{
+            display: flex;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-text" onmouseover="startGlow(this)" onmouseout="stopGlow(this)">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="love">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
